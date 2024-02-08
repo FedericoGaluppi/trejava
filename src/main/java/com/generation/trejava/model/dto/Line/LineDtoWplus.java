@@ -11,6 +11,6 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @SuperBuilder
 public class LineDtoWplus extends LineDtoBase {
-    private LocalDateTime duration;
+    private Double duration;
     private LocalDateTime arrivalTime;
 }

@@ -1,5 +1,6 @@
 package com.generation.trejava.model.dtoservices;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.generation.trejava.model.dto.Passenger.PassengerDtoR;
@@ -9,6 +10,7 @@ import com.generation.trejava.model.entities.Ticket;
 
 @Service
 public class PassengerConverter {
+    
 
     public PassengerDtoR PassengerToDtoR (Passenger e)
     {
@@ -44,11 +46,14 @@ public class PassengerConverter {
 
         for(Ticket t:e.getTicketBought())
             res+=t.getBase_price();
-            // metti if con gli sconti
+        
+        if(e.getAge()<14)
+            return res*0.8;
+
+        if(e.getAge()>65)
+            return res*0.6;
         
         return res;
  
     }
-
-    // i peperoni?
 }
