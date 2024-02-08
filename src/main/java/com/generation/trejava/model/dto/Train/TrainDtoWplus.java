@@ -1,12 +1,11 @@
 package com.generation.trejava.model.dto.Train;
 
-import com.generation.trejava.model.entities.Line;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
-
+@EqualsAndHashCode(callSuper=false)
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

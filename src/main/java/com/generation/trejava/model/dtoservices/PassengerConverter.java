@@ -1,6 +1,6 @@
 package com.generation.trejava.model.dtoservices;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Service;
 
 import com.generation.trejava.model.dto.Passenger.PassengerDtoR;
