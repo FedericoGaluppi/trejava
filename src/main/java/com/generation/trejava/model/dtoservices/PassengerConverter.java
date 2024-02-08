@@ -33,11 +33,6 @@ public class PassengerConverter {
                .totExp(calcTotExp(e))
                .build(); 
     }
-    
-    public int calcTotTicket(Passenger e)
-    {
-        return e.getTicketBought().size();
-    }
 
     public double calcTotExp(Passenger e)
     {
@@ -48,8 +43,12 @@ public class PassengerConverter {
             double res = 0;
 
         for(Ticket t:e.getTicketBought())
-            res+=e.getTicketBought().size()*t.getBase_price();
+            res+=t.getBase_price();
+            // metti if con gli sconti
         
         return res;
+ 
     }
+
+    // i peperoni?
 }
