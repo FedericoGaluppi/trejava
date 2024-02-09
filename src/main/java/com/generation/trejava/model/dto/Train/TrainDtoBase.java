@@ -1,8 +1,5 @@
 package com.generation.trejava.model.dto.Train;
 
-import java.util.List;
-
-import com.generation.trejava.model.entities.Line;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

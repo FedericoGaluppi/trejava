@@ -34,7 +34,7 @@ public class TrainConverter {
                 .routesTravelled(e.getRailwayLine().size())
                 .kmTravelled(kmTravelled(e))
                 .timeTravelled(timeTravelled(e))
-                .percentageCapacity(averageCapiency(e))
+                .percentageCapacity(averageCapacity(e))
                 .build();
 
     }
@@ -62,7 +62,7 @@ public class TrainConverter {
         return res;
     }
 
-    private int averageCapiency(Train t) {
+    private int averageCapacity(Train t) {
     int totTicketsForThatTrain = 0;
     for (Line l : t.getRailwayLine())
     totTicketsForThatTrain += l.getTicketSold().size();
