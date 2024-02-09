@@ -14,5 +14,6 @@ public class TrainDtoWplus extends TrainDtoBase {
     
     private int routesTravelled;
     private int timeTravelled;
+    private int kmTravelled;
     private int percentageCapacity;
 }

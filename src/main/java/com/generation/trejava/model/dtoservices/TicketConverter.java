@@ -1,9 +1,12 @@
 package com.generation.trejava.model.dtoservices;
 
+import org.springframework.stereotype.Service;
+
 import com.generation.trejava.model.dto.Ticket.TicketDtoR;
 import com.generation.trejava.model.dto.Ticket.TicketDtoWplus;
 import com.generation.trejava.model.entities.Ticket;
 
+@Service
 public class TicketConverter 
 {
 

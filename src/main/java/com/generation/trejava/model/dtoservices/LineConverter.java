@@ -2,11 +2,14 @@ package com.generation.trejava.model.dtoservices;
 
 import java.time.LocalDateTime;
 
+import org.springframework.stereotype.Service;
+
 import com.generation.trejava.model.dto.Line.LineDtoR;
 import com.generation.trejava.model.dto.Line.LineDtoWplus;
 import com.generation.trejava.model.entities.Line;
 import com.generation.trejava.model.entities.Train;
 
+@Service
 public class LineConverter {
 
     public LineDtoR LineToDtoR (Line l)
